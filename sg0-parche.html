@@ -67,13 +67,27 @@
 			max-width:100%;
 		}
 		
-		.cmpchart img{
-			transition:transform 0.25s ease;
+		.cmpchart{
+			position:relative;
 		}
 		
-		.cmpchart img:hover{
-			-webkit-transform:scale(2); /* or some other value */
-			transform:scale(2);
+		.cmpchart span.left{
+			position:absolute;
+			visibility:hidden;
+			left:7.5%; top:27.5%;
+			max-width:85%;
+		}
+		
+		.cmpchart span.right{
+			position:absolute;
+			visibility:hidden;
+			right:7.5%; top:27.5%;
+			max-width:85%;
+		}
+		
+		.cmpchart td:hover, .cmpchart td:hover span{
+			visibility:visible;
+			z-index:1;
 		}
 	</style>
 	<meta charset="utf-8">
@@ -106,16 +120,16 @@
 			<th>Adaptación</th>
 		</tr>
 		<tr>
-			<td><img src="https://i.imgur.com/CJscQY5.jpg"></td>
-			<td><img src="https://i.imgur.com/xAC5YO7.jpg"></td>
+			<td><img src="https://i.imgur.com/qG7RrRi.png"><span class="left"><img src="https://i.imgur.com/cG1xPP1.png"></span></td>
+			<td><img src="https://i.imgur.com/ZasJP6H.png"><span class="right"><img src="https://i.imgur.com/jQOM7Fn.png"></span></td>
 		</tr>
 		<tr>
-			<td><img src="https://i.imgur.com/cabb4EX.jpg"></td>
-			<td><img src="https://i.imgur.com/BjQi4OJ.jpg"></td>
+			<td><img src="https://i.imgur.com/V5sHQL9.png"><span class="left"><img src="https://i.imgur.com/3O1MGqX.png"></span></td>
+			<td><img src="https://i.imgur.com/zLRhTjr.png"><span class="right"><img src="https://i.imgur.com/g60Iiy3.png"></span></td>
 		</tr>
 		<tr>
-			<td><img src="https://i.imgur.com/SVoA15A.jpg"></td>
-			<td><img src="https://i.imgur.com/R10esQr.jpg"></td>
+			<td><img src="https://i.imgur.com/nkhaFtO.png"><span class="left"><img src="https://i.imgur.com/9kb3BLo.png"></span></td>
+			<td><img src="https://i.imgur.com/G7CORud.png"><span class="right"><img src="https://i.imgur.com/BWaDCne.png"></span></td>
 		</tr>
 	</table>
 	<p>Este parche es, además, una modificación sobre el de <a href="https://sonome.dareno.me/">Committee of Zero</a>, por lo que las herramientas utilizadas para su creación son las que dicho grupo ha desarrollado.</p>
